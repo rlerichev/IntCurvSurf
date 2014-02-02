@@ -1,0 +1,535 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish-mexico
+\language_package babel
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Visualización Matemática con Python: Curvas Integrales en Superficies
+\end_layout
+
+\begin_layout Author
+César Méndez
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+Mat.
+ Renato Leriche Vázquez
+\end_layout
+
+\begin_layout Date
+2014
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introducción
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+\begin_inset Quotes eld
+\end_inset
+
+Teoría conocida
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Geometría Diferencial
+\end_layout
+
+\begin_layout Subsection
+Superficies Regulares
+\end_layout
+
+\begin_layout Standard
+Temas:
+\end_layout
+
+\begin_layout Standard
+* Definición de Superficie Regular
+\end_layout
+
+\begin_layout Standard
+* Ejemplos de superficies parametrizadas
+\end_layout
+
+\begin_layout Standard
+* Ejemplos de superficies como gráfica de una función
+\end_layout
+
+\begin_layout Standard
+* Valor regular de una función diferenciable
+\end_layout
+
+\begin_layout Standard
+* Ejemplos de superficies como función inversa de un valor regular
+\end_layout
+
+\begin_layout Subsection
+Campo vectorial sobre una superficie regular
+\end_layout
+
+\begin_layout Standard
+Temas:
+\end_layout
+
+\begin_layout Standard
+* Definición de Plano Tangente en un punto 
+\begin_inset Formula $T_{p}S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+* Definición de Haz Tangente
+\end_layout
+
+\begin_layout Standard
+* Definición de Campo Vectorial Diferenciable
+\end_layout
+
+\begin_layout Standard
+* Ejemplos de campos vectoriales
+\end_layout
+
+\begin_layout Section
+Ecuaciones Diferenciales Ordinarias (EDOs)
+\end_layout
+
+\begin_layout Subsection
+EDOs en un Espacio Euclidiano
+\end_layout
+
+\begin_layout Standard
+Temas:
+\end_layout
+
+\begin_layout Standard
+* Definición de EDO
+\end_layout
+
+\begin_layout Standard
+* Campos vectoriales asociados
+\end_layout
+
+\begin_layout Subsection
+EDOs en una Superficie Regular
+\end_layout
+
+\begin_layout Standard
+Temas:
+\end_layout
+
+\begin_layout Standard
+* Campos vectoriales y sistemas de EDOs asociados
+\end_layout
+
+\begin_layout Subsection
+El Teorema de Existencia y Unicidad de Soluciones de EDOs
+\end_layout
+
+\begin_layout Standard
+Temas:
+\end_layout
+
+\begin_layout Standard
+* Teorema de existencia y unicidad
+\end_layout
+
+\begin_layout Standard
+* Teorema de existencia y unicidad en Variedades Diferenciales
+\end_layout
+
+\begin_layout Section
+Métodos de Integración Numérica
+\end_layout
+
+\begin_layout Subsection
+Euler
+\end_layout
+
+\begin_layout Subsection
+Runge-Kutta (varios órdenes)
+\end_layout
+
+\begin_layout Subsection
+Otros (¿Implícitos?)
+\end_layout
+
+\begin_layout Section
+Visualización Matemática
+\end_layout
+
+\begin_layout Standard
+Temas:
+\end_layout
+
+\begin_layout Standard
+* Definición de Visualización Científica
+\end_layout
+
+\begin_layout Standard
+* Definición de Visualización Matemática
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Métodos de Integración Numérica en Superficies
+\end_layout
+
+\begin_layout Section
+Integración Numérica usando el método tradicional
+\end_layout
+
+\begin_layout Standard
+Temas:
+\end_layout
+
+\begin_layout Standard
+* Descripción del método
+\end_layout
+
+\begin_layout Standard
+* Algoritmo
+\end_layout
+
+\begin_layout Standard
+* Ejemplos
+\end_layout
+
+\begin_layout Section
+Integración Numérica usando el nuevo método de proyección (Leriche)
+\end_layout
+
+\begin_layout Standard
+Temas:
+\end_layout
+
+\begin_layout Standard
+* Descripción del método
+\end_layout
+
+\begin_layout Standard
+* Algoritmo en el caso de cartas coordenadas
+\end_layout
+
+\begin_layout Standard
+* Algoritmo en el caso de función inversa (supongo que debe de ser distinto
+ al anterior)
+\end_layout
+
+\begin_layout Standard
+* Ejemplos
+\end_layout
+
+\begin_layout Section
+Integración Numérica usando el nuevo método X (Méndez-Jaramillo)
+\end_layout
+
+\begin_layout Standard
+Temas:
+\end_layout
+
+\begin_layout Standard
+* Descripción del método
+\end_layout
+
+\begin_layout Standard
+* Algoritmo en el caso de cartas coordenadas
+\end_layout
+
+\begin_layout Standard
+* Algoritmo en el caso de función inversa (supongo que debe de ser distinto
+ al anterior)
+\end_layout
+
+\begin_layout Standard
+* Ejemplos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+\begin_inset Quotes eld
+\end_inset
+
+Análisis Computacional
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+El software
+\end_layout
+
+\begin_layout Standard
+Temas:
+\end_layout
+
+\begin_layout Standard
+* Descripción general
+\end_layout
+
+\begin_layout Section
+\begin_inset Quotes eld
+\end_inset
+
+Comparaciones
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Temas:
+\end_layout
+
+\begin_layout Standard
+* Eficiencia, comparación Método Tradicional Vs.
+ Método Leriche
+\end_layout
+
+\begin_layout Standard
+* Error, comparación Método Tradicional Vs.
+ Método Leriche Vs.
+ Solución Analítica (exacta)
+\end_layout
+
+\begin_layout Standard
+* Tablas de comparación con distintos 
+\begin_inset Formula $\text{\Delta}t$
+\end_inset
+
+ y distintos métodos (Euler, Runge-Kutta, etc).
+\end_layout
+
+\begin_layout Section
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+Temas:
+\end_layout
+
+\begin_layout Standard
+* Cual es mejor en eficiencia: Método Tradicional Vs.
+ Método Leriche
+\end_layout
+
+\begin_layout Standard
+* Cual es mejor en 
+\begin_inset Quotes eld
+\end_inset
+
+correctez
+\begin_inset Quotes erd
+\end_inset
+
+ (menor error): Método Tradicional Vs.
+ Método Leriche
+\end_layout
+
+\begin_layout Standard
+* Cual es mejor en otros aspectos: Método Tradicional Vs.
+ Método Leriche
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Apéndices
+\end_layout
+
+\begin_layout Section
+Python
+\end_layout
+
+\begin_layout Section
+Bibliotecas en Python
+\end_layout
+
+\begin_layout Subsection
+Bibliotecas Científicas
+\end_layout
+
+\begin_layout Subsubsection*
+NumPy
+\end_layout
+
+\begin_layout Subsubsection*
+SciPy
+\end_layout
+
+\begin_layout Subsection
+Bibliotecas para Visualización
+\end_layout
+
+\begin_layout Subsubsection*
+PyOpenGL
+\end_layout
+
+\begin_layout Subsubsection*
+MatPlotLib
+\end_layout
+
+\begin_layout Subsubsection*
+VisVis
+\end_layout
+
+\begin_layout Subsubsection*
+VisPy
+\end_layout
+
+\begin_layout Subsection
+Bibliotecas para Interfaces de Usuario
+\end_layout
+
+\begin_layout Subsubsection*
+PyQt
+\end_layout
+
+\begin_layout Subsubsection*
+PySide
+\end_layout
+
+\begin_layout Subsection
+Paquetes de Bibliotecas
+\end_layout
+
+\begin_layout Subsubsection*
+Pyzo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Bibliografía
+\end_layout
+
+\end_body
+\end_document

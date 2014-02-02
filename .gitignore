@@ -1,7 +1,13 @@
+# Compiled Python
 *.py[cod]
 
 # C extensions
 *.so
+*.a
+*.out
+*.exe
+*.lib
+*.dll
 
 # Packages
 *.egg
@@ -34,3 +40,19 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Documents
+*.pdf
+*.doc
+*.docx
+*.odt
+*.ps
+*.dvi
+
+# Temporal
+tmp
+temp
+*.tmp
+*.temp
+~*
+
