@@ -6,6 +6,8 @@ Python code with algorithms for Integral Curves in Surfaces
 
 Authors
 ===========
-César Mémdez Mendoza
+
+César Méndez Mendoza
+
 Renato Leriche Vázquez
 
