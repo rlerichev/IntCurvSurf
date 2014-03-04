@@ -6,7 +6,7 @@
 
 from math import sin, cos, pi
 import numpy as np # Biblioteca "numérica", de arreglos n-dimensionales
-import scipy.linalg as la # Biblioteca de álgeba lineal
+import scipy.linalg as la # Biblioteca de álgebra lineal
 
 
 def vec2(u,v):
@@ -68,7 +68,8 @@ print( "w =", w )
 # Comprobación, la inversa aplicada a w da q
 print( "dfq_1(w)=", dfq_inv.dot(w) )
 
-# (Todo) vector en el plano tengente es combinación lineal de las derivadas de
+# Todo vector en el plano tengente es combinación lineal de las derivadas de
 # la parametrización, la inversa aplicada a la combinación da los coeficientes
 w2 = 3.2*fu - 0.5*fv
 print( "dfq_1(w2)=", dfq_inv.dot(w2) )
+
