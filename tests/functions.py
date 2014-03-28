@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+#
+# Ejemplo de Funciones
+#
+
 # Mutables!!!
 def putNext(n, s, things):
 	n += 1
@@ -51,7 +55,6 @@ def fibPy(n):
 	n_2, n_1, i = 1, 1, 1
 	while i < n:
 		n_2, n_1 = n_1, n_2 + n_1
-		#n_1, n_2 = n_2 + n_1, n_1
 		i += 1
 	return n_1
 
